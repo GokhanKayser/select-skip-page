@@ -1,0 +1,85 @@
+.drawer-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+  z-index: 999;
+}
+
+.drawer-wrapper.open {
+  height: 75px;
+  transition: height 0.5s ease-in-out;
+}
+
+.drawer {
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-top: 2px solid #444;
+}
+
+.drawer-left .drawer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer-left h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.drawer-left .price {
+  color: #4ad395;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.back-btn,
+.next-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0 0 0 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 1s ease;
+}
+
+.back-btn:hover {
+  background: #555;
+}
+
+.next-btn:hover {
+  background: #4ad395;
+  color: #111;
+}
+
+@media (max-width: 425px) {
+  .drawer {
+    padding: 0 1rem;
+  }
+
+  .drawer-left h4 {
+    font-size: 1rem;
+  }
+
+  .drawer-left .price {
+    font-size: 0.8rem;
+  }
+
+  .back-btn,
+  .next-btn {
+    padding: 0.4rem 0.9rem;
+    margin: 0 0 0 0.3rem;
+  }
+}
