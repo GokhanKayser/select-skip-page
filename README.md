@@ -78,4 +78,4 @@ Only the **"Select Skip"** page is currently implemented. The other pages are pl
 
 ## 🙌 Author
 
-Made with ❤️ by [Gokhan Kayser](https://www.linkedin.com/in/gokhankayser)
+Made with ❤️ by [Gokhan Kayser](https://www.linkedin.com/in/gokhan-kayser)
